@@ -150,7 +150,7 @@
         /* スクロールイベントに変換 */
         y-input-code = <INPUT_REL_WHEEL>;
         /* ★ 上下反転 */
-        y-mult = <-1>;
+        y-mult = <(-1)>;
     };
     };
 };
