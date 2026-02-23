@@ -143,14 +143,6 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
-        };
-    trackball_scroll_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        /* スクロールイベントに変換 */
-        y-input-code = <INPUT_REL_WHEEL>;
-        /* ★ 上下反転 */
-        y-mult = <(-1)>;
-    };
+        };  
     };
 };
