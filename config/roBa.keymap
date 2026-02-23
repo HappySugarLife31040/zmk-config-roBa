@@ -11,7 +11,7 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
-    scroll-sensitivity = <2>;
+    scroll-reverse-y;
 
     // arrows {
     //     layers = <3>;
