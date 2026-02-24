@@ -82,8 +82,8 @@
             bindings = <
 &kp Q               &kp L         &kp U         &kp MINUS                    &kp ESCAPE                                      &kp F                  &kp W  &lt 5 R  &kp Y  &kp P
 &kp E               &kp I         &kp A         &kp O                        &kp TAB      &kp PRINTSCREEN      &kp QUESTION  &kp K                  &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C                        &kp V        &to 6                &kp COMMA     &kp G                  &kp D  &kp M    &kp J  &mt B RIGHT_SHIFT
-&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_HENKAN  &lt 1 SPACE  &kp BACKSPACE        &kp ENTER     &lt 2 INTERNATIONAL_5                         &to 4
+&mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C                        &kp V        &to 6                &kp COMMA     &kp G                  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt 3 SPACE  &kp BACKSPACE        &kp ENTER     &lt 2 INTERNATIONAL_5                         &to 4
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
@@ -91,7 +91,7 @@
 
         FUNCTION {
             bindings = <
-&trans     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp ESCAPE                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans             &trans
+&trans     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp ESCAPE                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans             &kp UNDERSCORE
 &kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans      &trans          &trans      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SINGLE_QUOTE   &kp BACKSLASH
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans      &trans          &kp PERIOD  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE
 &trans     &trans           &trans        &trans                &trans      &kp DELETE      &trans      &trans                                                                         &trans
@@ -139,7 +139,7 @@
         layer_6 {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &to 0
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
