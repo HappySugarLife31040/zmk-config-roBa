@@ -74,6 +74,25 @@
             bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
         };
+        abcde_macro: abcde_macro {
+        compatible = "zmk,behavior-macro";
+        label = "PW";
+        bindings =
+            <&kp N0>
+            , <&kp K>
+            , <&kp a>
+            , <&kp k>
+            , <&kp o>
+            , <&kp N1>
+            , <&kp M>
+            , <&kp i>
+            , <&kp r>
+            , <&kp a>
+            , <&kp i>
+            , <&kp LS(N1)>;   // ← !（Shift+1）
+            , <&kp N0>
+            , <&kp N1>
+         };
     };
 
     behaviors {
