@@ -45,7 +45,7 @@
         };
 
         pw {
-            bindings = <&abcde_macro>;
+            bindings = <&kt A>;
             key-positions = <0 1>;
         };
     };
@@ -79,8 +79,6 @@
             bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
         };
-
-        
     };
 
     behaviors {
