@@ -154,7 +154,7 @@
             bindings = <
 &trans     &kp AMPERSAND    &kp ASTERISK  &parenthesis  &kp LS(N0)                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans             &kp UNDERSCORE
 &kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET     &trans      &trans          &trans      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SINGLE_QUOTE   &kp BACKSLASH
-&kp GRAVE  &kp EXCLAMATION  &kp NJP_DQUOTE   &kp HASH      &trans      &trans          &kp PERIOD  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE
+&kp GRAVE  &kp EXCLAMATION  &kp JP_DQUOTE   &kp HASH      &trans      &trans          &kp PERIOD  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE
 &trans     &trans           &trans        &trans        &trans      &kp DELETE      &trans      &trans                                                                         &trans
             >;
         };
