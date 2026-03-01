@@ -123,12 +123,7 @@
             bindings = <&kp N0 &kp &kp A &kp K &kp O &kp N1 &kp LS(M) &kp I &kp R &kp A &kp I &kp EXCLAMATION &kp N0 &kp N1>;
         };
 
-        GID_macro: GID_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            label = "GID";
-            bindings = <&kp N0 &kp &kp &kp &kp &kp &kp &kp &kp &kp &kp TAB>;
-        };
+        
     };
 
     behaviors {
