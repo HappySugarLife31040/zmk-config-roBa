@@ -104,23 +104,6 @@
             bindings = <&kp INTERNATIONAL_5 &kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
         };
-
-        abcde_macro: abcde_macro {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    label = "Abcde123";
-
-    bindings =
-        <&kp LS(A)>
-        , <&kp B>
-        , <&kp C>
-        , <&kp D>
-        , <&kp E>
-        , <&kp N1>
-        , <&kp N2>
-        , <&kp N3>
-        , <&kp LS(N1)>;
-    };
     };
 
     behaviors {
