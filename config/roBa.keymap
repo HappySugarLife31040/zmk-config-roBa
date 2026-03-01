@@ -81,7 +81,7 @@
         };
 
         gid {
-            bindings = <&kp A>;
+            bindings = <&GID_macro>;
             key-positions = <34 33>;
         };
     };
@@ -122,6 +122,7 @@
             label = "Pa";
             bindings = <&kp N0 &kp LS(K) &kp A &kp K &kp O &kp N1 &kp LS(M) &kp I &kp R &kp A &kp I &kp EXCLAMATION &kp N0 &kp N1>;
         };
+
         GID_macro: GID_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -205,7 +206,7 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &to_layer_0 MINUS  &to_layer_0 ESCAPE                         &to_layer_0 F    &to_layer_0 W      &trans             &to_layer_0 Y      &to_layer_0 P
+&to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &to_layer_0 MINUS  &to_layer_0 ESCAPE                         &to_layer_0 F    &kp LEFT           &trans             &kp RIGHT_ARROW    &to_layer_0 P
 &to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O      &to_layer_0 TAB     &trans      &kp LC(V)  &kp LC(LS(TAB))  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 H
 &trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C      &to_layer_0 V       &trans      &kp LC(C)  &to_layer_0 G    &mkp MB4           &trans             &mkp MB5           &trans
 &trans         &trans         &trans         &trans             &trans              &trans      &trans     &trans                                                                    &trans
