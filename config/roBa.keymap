@@ -77,12 +77,12 @@
 
         PW {
             bindings = <&pa_macro>;
-            key-positions = <34 42>;
+            key-positions = <9 0>;
         };
 
         gid {
             bindings = <&GID_macro>;
-            key-positions = <34 33>;
+            key-positions = <0 8>;
         };
     };
 
