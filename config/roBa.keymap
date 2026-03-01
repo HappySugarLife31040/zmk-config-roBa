@@ -71,7 +71,7 @@
         };
 
         zikken {
-            bindings = <&kt A>;
+            bindings = <&kp A>;
             key-positions = <0 1>;
         };
 
