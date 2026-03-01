@@ -153,19 +153,19 @@
 
         SYMBOLS {
             bindings = <
-&trans          &kp CARET        &kp DOUBLE_QUOTES  &parenthesis  &trans                              &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans            &trans         &kp UNDERSCORE
-&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &trans          &trans      &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp COLON      &kp RIGHT_BRACKET
-&kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &trans          &kp PERIOD  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp RS(COLON)  &kp LS(RIGHT_BRACKET)
-&trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                    &trans
+&trans          &kp CARET        &kp DOUBLE_QUOTES  &parenthesis  &trans                              &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans            &trans             &kp LS(MINUS)
+&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &trans          &trans      &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp DOUBLE_QUOTES  &kp NON_US_BACKSLASH
+&kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &trans          &kp PERIOD  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp RS(NUMBER_7)   &kp LS(BACKSLASH)
+&trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                        &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp PLUS                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                                                &kp PLUS      &kp N7  &kp N8  &kp N9  &kp N0
-&kp MINUS                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &kp LC(LA(KP_NUMBER_0))      &kp EXCLAMATION  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
-&mt ASTERISK KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL        &trans                       &kp PERIOD       &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL
-&trans                    &trans           &trans           &trans           &trans           &kp DELETE                   &trans           &trans                                &trans
+&kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                                   &kp PLUS      &kp N7  &kp N8  &kp N9  &kp N0
+&kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &trans          &kp EXCLAMATION  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
+&kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL        &trans          &kp PERIOD       &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&trans        &trans           &trans           &trans           &trans           &kp DELETE      &trans           &trans                                &trans
             >;
         };
 
