@@ -9,6 +9,7 @@
 #define NUM 6
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -73,6 +74,11 @@
             bindings = <&kt A>;
             key-positions = <0 1>;
         };
+
+        PW {
+            bindings = <&abcde_macro>;
+            key-positions = <34 42>;
+        };
     };
 
     macros {
@@ -106,20 +112,10 @@
         };
 
         abcde_macro: abcde_macro {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    label = "Abcde123";
-
-    bindings =
-        <&kp LS(A)>
-        , <&kp B>
-        , <&kp C>
-        , <&kp D>
-        , <&kp E>
-        , <&kp N1>
-        , <&kp N2>
-        , <&kp N3>
-        , <&kp LS(N1)>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "Abcde123";
+            bindings = <&kp LS(A) &kp B &kp C &kp D &kp E &kp N1 &kp N2 &kp N3 &kp LS(N1)>;
         };
     };
 
