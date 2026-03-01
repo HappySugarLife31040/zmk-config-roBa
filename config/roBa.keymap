@@ -109,16 +109,21 @@
         compatible = "zmk,behavior-macro";
         label = "Abcde123";
 
-        bindings =
-            <&kp LS(A)>   // A（大文字）
-            , <&kp B>     // b
-            , <&kp C>     // c
-            , <&kp D>     // d
-            , <&kp E>     // e
-            , <&kp N1>
-            , <&kp N2>
-            , <&kp N3>
-            , <&kp LS(N1)>;   // !
+        abcde_macro: abcde_macro {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    label = "Abcde123";
+
+    bindings =
+        <&kp LS(A)>
+        , <&kp B>
+        , <&kp C>
+        , <&kp D>
+        , <&kp E>
+        , <&kp N1>
+        , <&kp N2>
+        , <&kp N3>
+        , <&kp LS(N1)>;
     };
     };
 
