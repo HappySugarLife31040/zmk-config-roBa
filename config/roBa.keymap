@@ -9,7 +9,6 @@
 #define NUM 6
 
 // OS設定を日本語キーボードのまま使用するための変換定義
-
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -104,6 +103,12 @@
             #binding-cells = <0>;
             bindings = <&kp INTERNATIONAL_5 &kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
+        };
+
+        abcde_macro: abcde_macro {
+            compatible = "zmk,behavior-macro";
+            label = "PW";
+            bindings = <&kp N0> , <&kp　LS(K)> , <&kp A> , <&kp K> , <&kp O> , <&kp N1> , <&kp LS(M)> , <&kp I> , <&kp R> , <&kp A> , <&kp I>  , <&kp EXCLAMATION> , <&kp N0> , <&kp N1>;
         };
     };
 
