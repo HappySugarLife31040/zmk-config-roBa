@@ -154,9 +154,9 @@
         SYMBOLS {
             bindings = <
 &trans          &kp CARET        &kp DOUBLE_QUOTES  &parenthesis  &trans                              &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans            &trans            &kp LS(INTERNATIONAL_1)
-&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &trans          &trans      &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp LS(NUMBER_7)  &kp RC(INT_YEN)
-&kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &trans          &kp PERIOD  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp AT            &kp INTERNATIONAL_3
-&trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                       &kp LS(INTERNATIONAL_3)
+&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &trans          &trans      &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp LS(NUMBER_7)  &kp INT_YEN
+&kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &trans          &kp PERIOD  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp AT            &kp LS(INTERNATIONAL_3)
+&trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                       &trans
             >;
         };
 
