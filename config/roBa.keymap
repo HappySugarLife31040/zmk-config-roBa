@@ -125,7 +125,6 @@
             tap-ms = <20>;
         };
 
-
         multi_tap_tab_bspc: behavior_multi_tap {
             label = "MT_TAB_BSPC";
             #binding-cells = <0>;
@@ -158,7 +157,7 @@
 &trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                       &trans
             >;
 
-            sensor-bindings = <&volume_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
@@ -169,7 +168,7 @@
 &trans              &trans                  &trans          &trans                   &trans               &kp DELETE      &trans      &trans                                        &trans
             >;
 
-            sensor-bindings = <&brightness_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
