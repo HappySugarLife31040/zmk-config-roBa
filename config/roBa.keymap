@@ -128,16 +128,14 @@
         volume_up_down: behavior_sensor_rotate_volume {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, 　// 左回転, 
-                        <&kp C_VOL_UP>;  // 右回転
+            bindings = <&kp C_VOL_DN &kp C_VOL_UP>;  // 左, 右
             tap-ms = <20>;
         };
 
         brightness_up_down: behavior_sensor_rotate_brightness {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_BRI_DN>, // 左回転, 
-                        <&kp C_BRI_UP>;　 // 右回転
+            bindings = <&kp C_BRI_DN &kp C_BRI_UP>;  // 左, 右
             tap-ms = <20>;
         };
 
