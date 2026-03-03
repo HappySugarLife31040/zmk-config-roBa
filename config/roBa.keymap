@@ -128,23 +128,17 @@
         volume_up_down: behavior_sensor_rotate_volume {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-
-            bindings =
-                <&kp C_VOL_DN>,   // 左回転
-                <&kp C_VOL_UP>;   // 右回転
-
-        tap-ms = <20>;
+            bindings = <&kp C_VOL_DN>, // 左回転, <&kp C_VOL_UP>;
+   // 右回転
+            tap-ms = <20>;
         };
 
         brightness_up_down: behavior_sensor_rotate_brightness {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-
-        bindings =
-            <&kp C_BRI_DN>,   // 左回転
-            <&kp C_BRI_UP>;   // 右回転
-
-        tap-ms = <20>;
+            bindings = <&kp C_BRI_DN>, // 左回転, <&kp C_BRI_UP>;
+   // 右回転
+            tap-ms = <20>;
         };
 
         multi_tap_tab_bspc: behavior_multi_tap {
@@ -178,6 +172,8 @@
 &trans          &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &trans          &kp PERIOD  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp AT            &kp LS(INTERNATIONAL_3)
 &trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                       &trans
             >;
+
+            sensor-bindings = <&volume_up_down>;
         };
 
         NUM {
@@ -187,6 +183,8 @@
 &mt LEFT_SHIFT TAB  &kp LG(LC(LEFT_ARROW))  &trans          &kp LG(LC(RIGHT_ARROW))  &trans               &trans          &kp PERIOD  &kp LS(SINGLE_QUOTE)  &kp N1  &kp N2  &kp N3  &kp LS(MINUS)
 &trans              &trans                  &trans          &trans                   &trans               &kp DELETE      &trans      &trans                                        &trans
             >;
+
+            sensor-bindings = <&brightness_up_down>;
         };
 
         ARROW {
@@ -207,6 +205,8 @@
 &trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C      &to_layer_0 V       &trans      &to_layer_0 COMMA     &to_layer_0 G  &mkp MB4           &to 0              &mkp MB5           &to_layer_0 B
 &trans         &trans         &trans         &trans             &trans              &trans      &trans                &trans                                                                  &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
