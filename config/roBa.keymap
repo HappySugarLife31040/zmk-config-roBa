@@ -171,7 +171,7 @@
 &trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                       &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&volume_up_down>;
         };
 
         NUM {
@@ -182,7 +182,7 @@
 &trans              &trans                  &trans          &trans                   &trans               &kp DELETE      &trans      &trans                                        &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&brightness_up_down>;
         };
 
         ARROW {
