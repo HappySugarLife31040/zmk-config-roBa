@@ -166,7 +166,7 @@
         SYMBOLS {
             bindings = <
 &kp PLUS        &kp CARET        &kp DOUBLE_QUOTES  &parenthesis  &trans                              &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans            &trans            &kp LS(INTERNATIONAL_1)
-&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &trans          &trans      &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp LS(NUMBER_7)  &kp INT_YEN
+&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &trans          &kp SLASH   &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp LS(NUMBER_7)  &kp INT_YEN
 &trans          &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &trans          &kp PERIOD  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp AT            &kp LS(INTERNATIONAL_3)
 &trans          &trans           &trans             &trans        &trans  &kp DELETE      &trans      &trans                                                                       &trans
             >;
@@ -177,7 +177,7 @@
         NUM {
             bindings = <
 &kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)                              &kp LS(SEMICOLON)     &kp N7  &kp N8  &kp N9  &kp N0
-&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &trans          &trans      &kp MINUS             &kp N4  &kp N5  &kp N6  &kp SLASH
+&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &trans          &kp SLASH   &kp MINUS             &kp N4  &kp N5  &kp N6  &kp SLASH
 &mt LEFT_SHIFT TAB  &kp LG(LC(LEFT_ARROW))  &trans          &kp LG(LC(RIGHT_ARROW))  &trans               &trans          &kp PERIOD  &kp LS(SINGLE_QUOTE)  &kp N1  &kp N2  &kp N3  &kp LS(MINUS)
 &trans              &trans                  &trans          &trans                   &trans               &kp DELETE      &trans      &trans                                        &trans
             >;
