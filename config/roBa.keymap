@@ -58,6 +58,11 @@
             bindings = <&GID_macro>;
             key-positions = <0 8>;
         };
+
+        nn {
+            bindings = <&nn_macro>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
@@ -108,7 +113,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "nn";
-            bindings = <&kp N  &kp N>;
+            bindings = <&kp N &kp N>;
         };
     };
 
@@ -123,10 +128,10 @@
         };
 
         scroll_up_down: behavior_sensor_rotate_scroll {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
-};
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp PAGE_UP>;
+        };
 
         volume_up_down: behavior_sensor_rotate_volume {
             compatible = "zmk,behavior-sensor-rotate";
