@@ -120,28 +120,28 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "hidari";
-            bindings = <&kp H &kp I &kp D &kp A &kp R &kp I &kp SPACE>;
+            bindings = <&kp INTERNATIONAL_4 &kp H &kp I &kp D &kp A &kp R &kp I &kp SPACE>;
         };
 
         sita_macro: sita_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "sita";
-            bindings = <&kp S &kp I &kp T &kp A &kp SPACE>;
+            bindings = <&kp INTERNATIONAL_4 &kp S &kp I &kp T &kp A &kp SPACE>;
         };
 
         ue_macro: ue_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "ue";
-            bindings = <&kp U &kp E &kp SPACE>;
+            bindings = <&kp INTERNATIONAL_4 &kp U &kp E &kp SPACE>;
         };
 
         migi_macro: migi_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "migi";
-            bindings = <&kp M &kp I &kp G &kp I &kp SPACE>;
+            bindings = <&kp INTERNATIONAL_4 &kp M &kp I &kp G &kp I &kp SPACE>;
         };
     };
 
