@@ -197,7 +197,7 @@
 &kp Q               &kp L         &kp U         &kp MINUS  &kp ESCAPE                                     &kp F  &kp W  &lt 5 R  &kp Y  &kp P
 &kp E               &kp I         &kp A         &kp O      &kp TAB     &to 3                &kp QUESTION  &kp K  &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C      &kp V       &kp PRINTSCREEN      &kp COMMA     &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp RCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 2      &kp SPACE   &kp BACKSPACE        &kp ENTER     &mo 1                         &mo 6
+&kp RCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 2      &kp SPACE   &kp BACKSPACE        &kp ENTER     &mo 1                         &lt 6 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
