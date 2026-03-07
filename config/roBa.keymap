@@ -159,7 +159,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
 
@@ -193,8 +195,8 @@
         default_layer {
             bindings = <
 &kp Q               &kp L         &kp U         &kp MINUS  &kp ESCAPE                                     &kp F  &kp W  &lt 5 R  &kp Y  &kp P
-&kp E               &kp I         &kp A         &kp O      &kp TAB     &kp PRINTSCREEN      &kp QUESTION  &kp K  &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C      &kp V       &mo 3                &kp COMMA     &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp E               &kp I         &kp A         &kp O      &kp TAB     &to 2                &kp QUESTION  &kp K  &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C      &kp V       &kp PRINTSCREEN      &kp COMMA     &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
 &kp RCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 2      &kp SPACE   &kp BACKSPACE        &kp ENTER     &mo 1                         &mo 6
             >;
 
@@ -215,7 +217,7 @@
         NUM {
             bindings = <
 &kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)                              &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
-&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &trans          &kp SLASH   &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
+&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &to 0           &kp SLASH   &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
 &mt LEFT_SHIFT TAB  &kp LG(LC(LEFT_ARROW))  &trans          &kp LG(LC(RIGHT_ARROW))  &trans               &trans          &kp PERIOD  &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
 &trans              &trans                  &trans          &trans                   &trans               &kp DELETE      &trans      &trans                                                 &trans
             >;
@@ -226,7 +228,7 @@
         ARROW {
             bindings = <
 &kp LS(SEMI)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                      &kp LG(LEFT_ARROW)  &kp LS(LC(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)
-&kp MINUS             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &trans      &trans  &kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&kp MINUS             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &to 2       &trans  &kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
 &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL        &trans      &trans  &trans              &kp LC(LG(LEFT_ARROW))  &trans          &kp LC(LG(RIGHT_ARROW))  &trans
 &trans                &trans           &trans           &trans           &trans           &trans      &trans  &trans                                                                               &trans
             >;
