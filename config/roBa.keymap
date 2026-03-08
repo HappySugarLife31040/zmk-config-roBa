@@ -64,7 +64,7 @@
             key-positions = <19 20>;
         };
 
-        to7_manualmouse {
+        to_manualmouse {
             bindings = <&tog 3>;
             key-positions = <9 8>;
         };
