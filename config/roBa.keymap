@@ -264,5 +264,14 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                    &trans
             >;
         };
+        MANUAL_MOUSE {
+    bindings = <
+&to 0  &kp L  &kp U  &kp MINUS  &kp ESCAPE      &kp F  &kp LEFT  &trans  &kp RIGHT  &kp P
+&to 0  &kp I  &kp A  &kp O      &kp TAB  &to 3   &kp QUESTION  &kp K  &mkp MB1  &mkp MB3  &mkp MB2  &kp H
+&trans &kp Z  &kp X  &kp C      &kp V            &trans  &kp COMMA  &kp G  &mkp MB4  &to 0  &mkp MB5  &kp B
+&trans &trans &trans &trans     &trans           &trans  &trans  &trans              &trans
+    >;
+    sensor-bindings = <&scroll_up_down>;
+};
     };
 };
