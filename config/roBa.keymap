@@ -267,10 +267,10 @@
 
         MANUAL_MOUSE {
             bindings = <
-&to 0   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                            &kp F   &kp LEFT  &trans    &kp RIGHT  &kp P
-&to 0   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp TAB          &to 3       &kp QUESTION  &kp K   &mkp MB1  &mkp MB3  &mkp MB2   &kp H
-&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp V            &trans      &kp COMMA     &kp G   &mkp MB4  &to 0     &mkp MB5   &kp B
-&trans  &trans           &trans           &trans           &trans           &trans      &trans        &trans                                 &trans
+&kp LS(SEMI)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                      &kp F   &kp LEFT  &trans    &kp RIGHT  &kp P
+&kp MINUS             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH         &to 3       &kp QUESTION  &kp K   &mkp MB1  &mkp MB3  &mkp MB2   &kp H
+&kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)    &trans       &kp COMMA     &kp G   &mkp MB4  &to 0     &mkp MB5   &kp B
+&kp TAB               &kp ENTER        &kp PERIOD       &trans           &trans           &trans      &trans        &trans                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
