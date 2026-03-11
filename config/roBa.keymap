@@ -64,7 +64,7 @@
         };
 
         to_manualmouse {
-            bindings = <&tog 5>;
+            bindings = <&tog 2>;
             key-positions = <9 8>;
         };
     };
@@ -212,10 +212,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp L         &kp U         &kp MINUS  &kp ESCAPE                                     &kp F  &kp W  &lt 2 R  &kp Y  &kp P
+&kp Q               &kp L         &kp U         &kp MINUS  &kp ESCAPE                                     &kp F  &kp W  &lt 3 R  &kp Y  &kp P
 &kp E               &kp I         &kp A         &kp O      &kp TAB     &none                &kp QUESTION  &kp K  &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C      &kp V       &kp PRINTSCREEN      &kp COMMA     &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp RCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 4      &kp SPACE   &kp BACKSPACE        &kp ENTER     &mo 3                         &lt 6 DELETE
+&kp RCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 5      &kp SPACE   &kp BACKSPACE        &kp ENTER     &mo 4                         &lt 6 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -225,8 +225,19 @@
             bindings = <
 &to_layer_0 Q  &to_layer_0 L  &to_layer_0 U  &to_layer_0 MINUS  &to_layer_0 ESCAPE                                    &to_layer_0 F  &kp LEFT           &trans             &kp RIGHT_ARROW    &to_layer_0 P
 &to_layer_0 E  &to_layer_0 I  &to_layer_0 A  &to_layer_0 O      &to_layer_0 TAB     &trans      &to_layer_0 QUESTION  &to_layer_0 K  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &to_layer_0 H
-&trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C      &to_layer_0 V       &trans      &to_layer_0 COMMA     &to_layer_0 G  &mkp MB4           &to 0              &mkp MB5           &to_layer_0 B
+&trans         &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C      &to_layer_0 V       &trans      &to_layer_0 COMMA     &to_layer_0 G  &mkp MB4           &to_layer_0 M      &mkp MB5           &to_layer_0 B
 &trans         &trans         &trans         &trans             &trans              &trans      &trans                &trans                                                                  &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        MANUAL_MOUSE {
+            bindings = <
+&kp LS(SEMI)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                            &none   &kp LEFT  &mo 3     &kp RIGHT  &none
+&kp MINUS             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &trans      &kp QUESTION  &none   &mkp MB1  &mkp MB3  &mkp MB2   &none
+&kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)    &trans      &kp COMMA     &none   &mkp MB4  &none     &mkp MB5   &none
+&mo 6                 &kp ENTER        &kp PERIOD       &trans           &trans           &trans      &trans        &trans                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -261,17 +272,6 @@
             >;
 
             sensor-bindings = <&brightness_up_down>;
-        };
-
-        MANUAL_MOUSE {
-            bindings = <
-&kp LS(SEMI)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                            &none   &kp LEFT  &mo 2     &kp RIGHT  &none
-&kp MINUS             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &trans      &kp QUESTION  &none   &mkp MB1  &mkp MB3  &mkp MB2   &none
-&kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)    &trans      &kp COMMA     &none   &mkp MB4  &to 0     &mkp MB5   &none
-&mo 6                 &kp ENTER        &kp PERIOD       &trans           &trans           &trans      &trans        &trans                                 &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         BlueTooth+Command {
