@@ -35,12 +35,12 @@
         compatible = "zmk,combos";
 
         tab {
-            bindings = <&kp INTERNATIONAL_4>;
+            bindings = <&L0int4_macro>;
             key-positions = <18 19>;
         };
 
         shift_tab {
-            bindings = <&kp INTERNATIONAL_5>;
+            bindings = <&L0int5_macro>;
             key-positions = <12 13>;
         };
 
