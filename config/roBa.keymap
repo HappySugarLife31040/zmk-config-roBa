@@ -5,7 +5,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL  100
 #define AUTO_MOUSE 1
-#define SCROLL 2
+#define SCROLL 3
 
 &mt {
     flavor = "balanced";
@@ -14,7 +14,7 @@
 
 &trackball {
     automouse-layer = <1>;
-    scroll-layers = <2>;
+    scroll-layers = <3>;
 
     // arrows {
     //     layers = <3>;
