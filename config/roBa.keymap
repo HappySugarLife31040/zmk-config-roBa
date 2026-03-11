@@ -151,7 +151,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "tyuutenn";
-            bindings = <&kp INTERNATIONAL_4 &kp />;
+            bindings = <&kp INTERNATIONAL_4 &kp SLASH>;
         };
 
         L0int4_macro: L0int4_macro {
