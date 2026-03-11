@@ -147,6 +147,12 @@
             label = "migi";
             bindings = <&kp INTERNATIONAL_4 &kp M &kp I &kp G &kp I &kp SPACE>;
         };
+        tyuutenn_macro: tyuutenn_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "tyuutenn";
+            bindings = <&kp INTERNATIONAL_4 &kp />;
+        };
 
         L0int4_macro: L0int4_macro {
             compatible = "zmk,behavior-macro";
