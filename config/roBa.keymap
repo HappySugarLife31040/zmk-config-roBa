@@ -6,6 +6,7 @@
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
 
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define AUTO_MOUSE 1
 #define SCROLL 3
@@ -178,13 +179,13 @@
             label = "MOVE_MONITOR_R";
             bindings = <&kp LG(LS(RIGHT_ARROW))>;
         };
+
         move_window_left_monitor: move_window_left_monitor {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "MOVE_MONITOR_L";
             bindings = <&kp LG(LS(LEFT_ARROW))>;
         };
-        
     };
 
     behaviors {
@@ -289,10 +290,10 @@
 
         NUM {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)                                   &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
-&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END              &trans          &tyuutenn_macro  &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
-&mt LEFT_SHIFT TAB  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LC(RIGHT_ARROW))  &trans               &trans          &kp PERIOD       &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
-&trans              &trans                  &trans          &trans                   &trans               &kp DELETE      &trans           &trans                                                 &trans
+&kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(RIGHT_ARROW)                                          &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
+&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                     &trans          &tyuutenn_macro  &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
+&mt LEFT_SHIFT TAB  &kp LC(RG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(RG(RIGHT_ARROW))  &move_window_right_monitor  &trans          &kp PERIOD       &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
+&trans              &trans                  &trans          &trans                   &trans                      &kp DELETE      &trans           &trans                                                 &trans
             >;
 
             sensor-bindings = <&brightness_up_down>;
