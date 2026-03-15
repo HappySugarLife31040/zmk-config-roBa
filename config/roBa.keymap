@@ -171,6 +171,20 @@
             label = "L0int5";
             bindings = <&to 0 &kp INTERNATIONAL_5>;
         };
+
+        move_window_right_monitor: move_window_right_monitor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "MOVE_MONITOR_R";
+            bindings = <&kp LG(LS(RIGHT_ARROW))>;
+        };
+        move_window_left_monitor: move_window_left_monitor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "MOVE_MONITOR_L";
+            bindings = <&kp LG(LS(LEFT_ARROW))>;
+        };
+        
     };
 
     behaviors {
