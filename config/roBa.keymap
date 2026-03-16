@@ -167,27 +167,33 @@
         };
 
         move_window_next_desktop: move_window_next_desktop {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    label = "MOVE_WIN_NEXT_DESKTOP";
-
-    bindings = <
-        &macro_tap &kp LG(TAB)
-        &macro_wait_time 300
-        &macro_tap &kp LS(F10)
-        &macro_wait_time 200
-        &macro_tap &kp DOWN_ARROW
-        &macro_wait_time 120
-        &macro_tap &kp DOWN_ARROW
-        &macro_wait_time 120
-        &macro_tap &kp ENTER
-        &macro_wait_time 200
-        &macro_tap &kp ENTER
-        &macro_wait_time 200
-        &macro_tap &kp ENTER
-        &macro_wait_time 200
-        &macro_tap &kp LG(LC(RIGHT_ARROW))
-    >;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "MOVE_WIN_NEXT_DESKTOP";
+            bindings =
+                <&macro_tap>,
+                <&kp LG(TAB)>,
+                <&macro_wait_time 300>,
+                <&macro_tap>,
+                <&kp LS(F10)>,
+                <&macro_wait_time 200>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_wait_time 120>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_wait_time 120>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_wait_time 200>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_wait_time 200>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_wait_time 200>,
+                <&macro_tap>,
+                <&kp LG(LC(RIGHT_ARROW))>;
         };
     };
 
@@ -282,10 +288,10 @@
 
         SYMBOLS {
             bindings = <
-&kp PLUS        &kp CARET        &kp DOUBLE_QUOTES  &int5_parenthesis  &trans                                   &hidari_macro      &sita_macro           &ue_macro         &migi_macro       &kp LS(INTERNATIONAL_1)
-&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT        &kp EQUAL          &trans  &trans          &tyuutenn_macro  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp SEMICOLON     &kp LS(NUMBER_7)  &kp INT_YEN
-&trans          &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH           &trans  &trans          &kp PERIOD       &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp AT            &kp LS(INTERNATIONAL_3)
-&trans          &trans           &trans             &trans             &trans  &kp DELETE      &trans           &trans                                                                       &trans
+&kp PLUS        &kp CARET        &kp DOUBLE_QUOTES  &int5_parenthesis  &trans                                   &hidari_macro  &sita_macro           &ue_macro         &migi_macro       &kp LS(INTERNATIONAL_1)
+&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT        &kp EQUAL          &trans  &trans          &tyuutenn_macro  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp SEMICOLON     &kp LS(NUMBER_7)  &kp INT_YEN
+&trans          &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH           &trans  &trans          &kp PERIOD       &trans         &parenthesis          &kp SINGLE_QUOTE  &kp AT            &kp LS(INTERNATIONAL_3)
+&trans          &trans           &trans             &trans             &trans  &kp DELETE      &trans           &trans                                                                   &trans
             >;
 
             sensor-bindings = <&volume_up_down>;
@@ -293,7 +299,7 @@
 
         NUM {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                                     &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
+&kp F11             &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                                     &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
 &kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                    &trans          &tyuutenn_macro  &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
 &mt LEFT_SHIFT TAB  &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(RG(RIGHT_ARROW))  &move_window_next_desktop  &trans          &kp PERIOD       &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
 &trans              &trans                  &trans          &trans                   &trans                     &kp DELETE      &trans           &trans                                                 &trans
