@@ -46,7 +46,7 @@
         };
 
         zikken {
-            bindings = <&kp D>;
+            bindings = <&kp E>;
             key-positions = <0 1>;
         };
 
@@ -93,8 +93,6 @@
 
             label = "MKP_EXIT_AML";
         };
-
-
 
         pa_macro: pa_macro {
             compatible = "zmk,behavior-macro";
