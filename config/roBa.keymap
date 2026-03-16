@@ -94,11 +94,11 @@
             label = "MKP_EXIT_AML";
         };
 
-        int5_parenthesis: parenthesis {
+        int5_parenthesis:  int5_parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp INTERNATIONAL_5 &kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT_ARROW>;
-            label = "parenthesis";
+            label = "int5_parenthesis";
         };
 
         pa_macro: pa_macro {
