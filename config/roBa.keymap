@@ -186,35 +186,30 @@
             label = "MOVE_MONITOR_L";
             bindings = <&kp LG(LS(LEFT_ARROW))>;
         };
+
         move_window_next_desktop: move_window_next_desktop {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     label = "MOVE_WIN_NEXT_DESKTOP";
 
-    bindings =
-        <&macro_tap &kp LG(TAB)>
-        <&macro_wait_time 250>
-
-        <&macro_tap &kp LS(F10)>
-        <&macro_wait_time 200>
-
-        <&macro_tap &kp DOWN_ARROW>
-        <&macro_wait_time 120>
-
-        <&macro_tap &kp DOWN_ARROW>
-        <&macro_wait_time 120>
-
-        <&macro_tap &kp ENTER>
-        <&macro_wait_time 200>
-
-        <&macro_tap &kp ENTER>
-        <&macro_wait_time 200>
-
-        <&macro_tap &kp ENTER>
-        <&macro_wait_time 200>
-
-        <&macro_tap &kp LG(LC(RIGHT_ARROW))>;
-        };
+    bindings = <
+        &macro_tap &kp LG(TAB)
+        &macro_wait_time 300
+        &macro_tap &kp LS(F10)
+        &macro_wait_time 200
+        &macro_tap &kp DOWN_ARROW
+        &macro_wait_time 120
+        &macro_tap &kp DOWN_ARROW
+        &macro_wait_time 120
+        &macro_tap &kp ENTER
+        &macro_wait_time 200
+        &macro_tap &kp ENTER
+        &macro_wait_time 200
+        &macro_tap &kp ENTER
+        &macro_wait_time 200
+        &macro_tap &kp LG(LC(RIGHT_ARROW))
+    >;
+};
     };
 
     behaviors {
