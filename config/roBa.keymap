@@ -163,6 +163,12 @@
             label = "L0int4";
             bindings = <&to 0 &kp INTERNATIONAL_4>;
         };
+        L0int5_macro: L0int5_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "L0int5";
+            bindings = <&to 0 &kp INTERNATIONAL_5>;
+        };
     };
 
     behaviors {
