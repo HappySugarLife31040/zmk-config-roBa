@@ -46,7 +46,7 @@
         };
 
         zikken {
-            bindings = <&kp C>;
+            bindings = <&kp D>;
             key-positions = <0 1>;
         };
 
@@ -94,13 +94,13 @@
             label = "MKP_EXIT_AML";
         };
 
-
         parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT_ARROW>;
             label = "PARENTHESIS";
         };
+
         pa_macro: pa_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -193,8 +193,6 @@
                 <&macro_tap>,
                 <&kp LG(LC(RIGHT_ARROW))>;
         };
-
-
     };
 
     behaviors {
