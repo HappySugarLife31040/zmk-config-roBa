@@ -179,7 +179,7 @@
                 <&macro_wait_time 1000>,
                 <&macro_tap>,
                 <&kp DOWN_ARROW>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 1000>,
                 <&macro_tap>,
                 <&kp DOWN_ARROW>,
                 <&macro_wait_time 1000>,
@@ -191,7 +191,7 @@
                 <&macro_wait_time 1000>,
                 <&macro_tap>,
                 <&kp ENTER>,
-                <&macro_wait_time 10t00>,
+                <&macro_wait_time 1000>,
                 <&macro_tap>,
                 <&kp LG(LC(RIGHT_ARROW))>;
         };
