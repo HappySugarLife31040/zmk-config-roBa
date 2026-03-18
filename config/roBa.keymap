@@ -210,6 +210,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <0>;
         };
+        mo_exit_0: mo_exit_0 {
+    compatible = "zmk,behavior-hold-tap";
+    label = "MO_EXIT_0";
+
+    bindings = <&mo>, <&to>;
+
+    #binding-cells = <2>;
+    tapping-term-ms = <0>;
+};
     };
 
     behaviors {
