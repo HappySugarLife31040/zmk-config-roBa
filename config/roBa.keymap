@@ -195,6 +195,17 @@
                 <&macro_tap>,
                 <&kp LG(LC(RIGHT_ARROW))>;
         };
+        exit_to_0: exit_to_0 {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&to 0>;
+};
+        mo_to_0: mo_to_0 {
+    compatible = "zmk,behavior-hold-tap";
+    bindings = <&mo>, <&exit_to_0>;
+    #binding-cells = <1>;
+    tapping-term-ms = <0>;
+};
     };
 
     behaviors {
@@ -206,15 +217,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-        mo_to_layer_0: mo_to_layer_0 {
-    compatible = "zmk,behavior-hold-tap";
-    label = "MO_TO_LAYER_0";
 
-    bindings = <&mo>, <&to_layer_0>;
-
-    #binding-cells = <2>;
-    tapping-term-ms = <0>;
-};
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
