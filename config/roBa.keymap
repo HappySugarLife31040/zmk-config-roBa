@@ -312,10 +312,10 @@
 
         SYMBOLS {
             bindings = <
-&kp PLUS        &kp CARET        &kp DOUBLE_QUOTES  &int5_parenthesis  &trans                                   &hidari_macro  &sita_macro       &ue_macro         &migi_macro       &kp LS(INTERNATIONAL_1)
-&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT        &kp EQUAL          &trans  &trans          &tyuutenn_macro  &kp LS(N8)     &kp LS(NUMBER_9)  &kp SEMICOLON     &kp LS(NUMBER_7)  &kp INT_YEN
-&trans          &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH           &trans  &trans          &kp PERIOD       &none          &parenthesis      &kp SINGLE_QUOTE  &kp AT            &kp LS(INTERNATIONAL_3)
-&trans          &trans           &trans             &trans             &trans  &kp DELETE      &trans           &trans                                                               &trans
+&kp PLUS        &kp CARET        &kp DOUBLE_QUOTES  &int5_parenthesis  &trans                                   &hidari_macro  &sita_macro   &ue_macro         &migi_macro       &kp LS(INTERNATIONAL_1)
+&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT        &kp EQUAL          &trans  &trans          &tyuutenn_macro  &kp RBKT       &kp BSLH      &kp SEMICOLON     &kp LS(NUMBER_7)  &kp INT_YEN
+&trans          &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH           &trans  &trans          &kp PERIOD       &none          &parenthesis  &kp SINGLE_QUOTE  &kp AT            &kp LS(INTERNATIONAL_3)
+&trans          &trans           &trans             &trans             &trans  &kp DELETE      &trans           &trans                                                           &trans
             >;
 
             sensor-bindings = <&volume_up_down>;
