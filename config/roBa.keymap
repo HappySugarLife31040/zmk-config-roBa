@@ -35,14 +35,16 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&L0int4_macro>;
-            key-positions = <18 19>;
+        L0int4 {
+                bindings = <&L0int4_macro>;
+                key-positions = <18 19>;
+                layers = <0 2 3 4 5 6 7>;
         };
 
-        shift_tab {
+        L0int5 {
             bindings = <&L0int5_macro>;
             key-positions = <12 13>;
+            layers = <0 2 3 4 5 6 7>;
         };
 
         zikken {
