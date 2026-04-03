@@ -6,8 +6,8 @@
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define AUTO_MOUSE 1
-#define SCROLL 3
+#define AUTO_MOUSE 2
+#define SCROLL 4
 
 &mt {
     flavor = "balanced";
@@ -15,11 +15,11 @@
 };
 
 &trackball {
-    automouse-layer = <1>;
-    scroll-layers = <3>;
+    automouse-layer = <2>;
+    scroll-layers = <4>;
 
     // arrows {
-    //     layers = <3>;
+    //     layers = <4>;
     //     bindings =
     //         <&kp RIGHT_ARROW>,
     //         <&kp LEFT_ARROW>,
@@ -50,13 +50,13 @@
         combo_android {
     bindings = <&kp LC(SPACE)>;
     key-positions = <12 13>;
-    layers = <7>;   // ANDROIDだけ
+    layers = <1>;   // ANDROIDだけ
 };
 
 combo_android2 {
     bindings = <&kp LC(SPACE)>;
     key-positions = <18 19>;
-    layers = <7>;   // ANDROIDだけ
+    layers = <1>;   // ANDROIDだけ
 };
 
         zikken {
