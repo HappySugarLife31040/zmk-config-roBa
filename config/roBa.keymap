@@ -36,9 +36,9 @@
         compatible = "zmk,combos";
 
         L0int4 {
-                bindings = <&L0int4_macro>;
-                key-positions = <18 19>;
-                layers = <0 2 3 4 5 6 7>;
+            bindings = <&L0int4_macro>;
+            key-positions = <18 19>;
+            layers = <0 2 3 4 5 6 7>;
         };
 
         L0int5 {
@@ -48,19 +48,19 @@
         };
 
         combo_android {
-    bindings = <&kp LC(SPACE)>;
-    key-positions = <12 13>;
-    layers = <1>;   // ANDROIDだけ
-};
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <12 13>;
+            layers = <1>;   // ANDROIDだけ
+        };
 
-combo_android2 {
-    bindings = <&kp LC(SPACE)>;
-    key-positions = <18 19>;
-    layers = <1>;   // ANDROIDだけ
-};
+        combo_android2 {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <18 19>;
+            layers = <1>;   // ANDROIDだけ
+        };
 
         zikken {
-            bindings = <&kp B>;
+            bindings = <&kp H>;
             key-positions = <0 1>;
         };
 
