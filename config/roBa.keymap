@@ -202,6 +202,14 @@
             bindings = <&to 0>;
         };
 
+        BT2: BT3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "BT3";
+        };
+
         mo_to_0: mo_to_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "MO_TO_0";
