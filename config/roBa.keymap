@@ -313,7 +313,7 @@
 &kp Q               &kp L          &kp U         &kp MINUS  &kp ESCAPE                                        &kp F  &kp W  &lt 4 R  &kp Y  &kp P
 &kp E               &kp I          &kp A         &kp O      &kp TAB     &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT TAB  &kp Z          &kp X         &kp C      &kp V       &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp RCTRL           &kp C_AC_HOME  &kp LEFT_ALT  &mo 6      &kp SPACE   &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 7 DELETE
+&kp LCTRL           &kp C_AC_HOME  &kp LEFT_ALT  &mo 6      &kp SPACE   &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 7 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
