@@ -54,7 +54,7 @@
         };
 
         combo_android2 {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&android_henkan>;
             key-positions = <18 19>;
             layers = <1>;   // ANDROIDだけ
         };
