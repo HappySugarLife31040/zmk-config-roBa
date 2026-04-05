@@ -50,13 +50,13 @@
         combo_android {
             bindings = <&kp SPACE>;
             key-positions = <12 13>;
-            layers = <1>;   // ANDROIDだけ
+            layers = <1 6 8>;   // ANDROIDだけ
         };
 
         combo_android2 {
             bindings = <&android_henkan>;
             key-positions = <18 19>;
-            layers = <1>;   // ANDROIDだけ
+            layers = <1 6 8>;   // ANDROIDだけ
         };
 
         zikken {
