@@ -231,6 +231,13 @@
             label = "ANDROID_HENKAN";
         };
 
+        A_parenthesis: A_pararent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "A_PARARENT";
+        };
+
         mo_to_0: mo_to_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "MO_TO_0";
