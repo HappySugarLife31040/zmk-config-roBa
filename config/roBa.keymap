@@ -418,6 +418,8 @@
 &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp RC(V)  &trans      &bootloader  &trans        &trans        &trans  &trans  &bt BT_CLR
 &trans          &trans     &trans     &trans     &trans     &trans      &trans       &trans                                      &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>;
         };
     };
 };
