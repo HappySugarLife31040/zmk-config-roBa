@@ -336,10 +336,10 @@
 
         AUTO_MOUSE {
             bindings = <
-&to_layer_0 Q   &to_layer_0 L         &to_layer_0 U         &to_layer_0 MINUS  &to_layer_0 ESCAPE                                                &to_layer_0 F   &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
-&to_layer_0 E   &to_layer_0 I         &to_layer_0 A         &to_layer_0 O      &to_layer_0 TAB     &trans                     &tyuutenn_macro    &to_layer_0 K   &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
-&kp LEFT_SHIFT  &to_layer_0 Z         &to_layer_0 X         &to_layer_0 C      &to_layer_0 V       &trans                     &to_layer_0 COMMA  &to_layer_0 G   &mkp MB4       &to_layer_0 M  &mkp MB5       &to_layer_0 B
-&kp RCTRL       &to_layer_0 LEFT_GUI  &to_layer_0 LEFT_ALT  &mo_exit_0 7 0     &to_layer_0 SPACE   &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 5 0                                               &trans
+&to_layer_0 Q  &to_layer_0 L         &to_layer_0 U         &to_layer_0 MINUS  &to_layer_0 ESCAPE                                                  &to_layer_0 F   &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
+&to_layer_0 E  &to_layer_0 I         &to_layer_0 A         &to_layer_0 O      &to_layer_0 TAB       &trans                     &tyuutenn_macro    &to_layer_0 K   &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
+&kp RCTRL      &to_layer_0 Z         &to_layer_0 X         &to_layer_0 C      &to_layer_0 V         &trans                     &to_layer_0 COMMA  &to_layer_0 G   &mkp MB4       &to_layer_0 M  &mkp MB5       &to_layer_0 B
+&kp DELETE     &to_layer_0 LEFT_GUI  &to_layer_0 LEFT_ALT  &mo_exit_0 7 0     &mt LEFT_SHIFT SPACE  &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 5 0                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
