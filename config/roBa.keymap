@@ -48,7 +48,7 @@
         };
 
         combo_android {
-            bindings = <&kp SPACE>;
+            bindings = <&kp LC(SPACE)>;
             key-positions = <12 13>;
             layers = <1 6 8>;   // ANDROIDだけ
         };
@@ -60,7 +60,7 @@
         };
 
         zikken {
-            bindings = <&kp I>;
+            bindings = <&kp N5>;
             key-positions = <0 1>;
         };
 
