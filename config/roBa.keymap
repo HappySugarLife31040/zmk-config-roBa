@@ -42,7 +42,7 @@
         };
 
         L0int5 {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&L0int5_macro>;
             key-positions = <12 13>;
             layers = <0 2 3 4 5 7 9>;
         };
