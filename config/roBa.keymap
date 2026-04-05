@@ -38,17 +38,17 @@
         L0int4 {
             bindings = <&L0int4_macro>;
             key-positions = <18 19>;
-            layers = <0 2 3 4 5 6 7>;
+            layers = <0 2 3 4 5 7 8>;
         };
 
         L0int5 {
-            bindings = <&android_henkan>;
+            bindings = <&kp LC(SPACE)>;
             key-positions = <12 13>;
-            layers = <0 2 3 4 5 6 7>;
+            layers = <0 2 3 4 5 7 8>;
         };
 
         combo_android {
-            bindings = <&android_henkan>;
+            bindings = <&kp SPACE>;
             key-positions = <12 13>;
             layers = <1>;   // ANDROIDだけ
         };
@@ -302,7 +302,7 @@
 &kp Q               &kp L         &kp U         &kp MINUS  &kp ESCAPE                                        &kp F  &kp W  &lt 4 R  &kp Y  &kp P
 &kp E               &kp I         &kp A         &kp O      &kp TAB     &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C      &kp V       &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp RCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 6      &kp SPACE   &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 7 DELETE
+&kp RCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 7      &kp SPACE   &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 8 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -313,7 +313,7 @@
 &kp Q               &kp L         &kp U         &kp MINUS  &kp ESCAPE                                        &kp F  &kp W  &lt 4 R  &kp Y  &kp P
 &kp E               &kp I         &kp A         &kp O      &kp TAB     &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C      &kp V       &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 6      &kp SPACE   &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 7 DELETE
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mo 7      &kp SPACE   &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 8 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -324,7 +324,7 @@
 &to_layer_0 Q   &to_layer_0 L         &to_layer_0 U         &to_layer_0 MINUS  &to_layer_0 ESCAPE                                                &to_layer_0 F   &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
 &to_layer_0 E   &to_layer_0 I         &to_layer_0 A         &to_layer_0 O      &to_layer_0 TAB     &trans                     &tyuutenn_macro    &to_layer_0 K   &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
 &kp LEFT_SHIFT  &to_layer_0 Z         &to_layer_0 X         &to_layer_0 C      &to_layer_0 V       &trans                     &to_layer_0 COMMA  &to_layer_0 G   &mkp MB4       &to_layer_0 M  &mkp MB5       &to_layer_0 B
-&kp RCTRL       &to_layer_0 LEFT_GUI  &to_layer_0 LEFT_ALT  &mo_exit_0 6 0     &to_layer_0 SPACE   &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 5 0                                               &trans
+&kp RCTRL       &to_layer_0 LEFT_GUI  &to_layer_0 LEFT_ALT  &mo_exit_0 7 0     &to_layer_0 SPACE   &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 5 0                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -335,7 +335,7 @@
 &kp LS(SEMI)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0                                      &none  &none     &mo 4  &none     &none
 &kp MINUS             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH        &trans             &tyuutenn_macro  &none  &mkp MB1  &none  &mkp MB2  &none
 &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)    &trans             &kp COMMA        &none  &mkp MB4  &none  &mkp MB5  &none
-&mo 7                 &kp ENTER        &kp PERIOD       &mo 6            &kp SPACE        &kp BACKSPACE      &kp ENTER        &mo 5                             &trans
+&mo 8                 &kp ENTER        &kp PERIOD       &mo 7            &kp SPACE        &kp BACKSPACE      &kp ENTER        &mo 5                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -359,6 +359,15 @@
             >;
 
             sensor-bindings = <&volume_up_down>;
+        };
+
+        A_SYMBOLS {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
         };
 
         NUM {
