@@ -325,10 +325,10 @@
 
         ANDROID {
             bindings = <
-&kp Q               &kp L         &kp U         &kp MINUS  &kp ESCAPE                                                  &kp F  &kp W  &lt 4 R  &kp Y  &kp P
-&kp E               &kp I         &kp A         &kp O      &kp TAB               &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT TAB  &kp Z         &kp X         &kp C      &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp DELETE          &kp LEFT_WIN  &kp LEFT_ALT  &mo 8      &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 6                         &to 9
+&kp Q         &kp L         &kp U  &kp MINUS  &kp ESCAPE                                                  &kp F  &kp W  &lt 4 R  &kp Y  &kp P
+&kp E         &kp I         &kp A  &kp O      &kp TAB               &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z         &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &mo 8      &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 6                         &lt 9 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -336,10 +336,10 @@
 
         AUTO_MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 L         &to_layer_0 U         &to_layer_0 MINUS  &to_layer_0 ESCAPE                                                  &to_layer_0 F   &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
-&to_layer_0 E  &to_layer_0 I         &to_layer_0 A         &to_layer_0 O      &to_layer_0 TAB       &trans                     &tyuutenn_macro    &to_layer_0 K   &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
-&kp RCTRL      &to_layer_0 Z         &to_layer_0 X         &to_layer_0 C      &to_layer_0 V         &trans                     &to_layer_0 COMMA  &to_layer_0 G   &mkp MB4       &to_layer_0 M  &mkp MB5       &to_layer_0 B
-&kp DELETE     &to_layer_0 LEFT_GUI  &to_layer_0 LEFT_ALT  &mo_exit_0 7 0     &mt LEFT_SHIFT SPACE  &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 5 0                                               &trans
+&to_layer_0 Q  &to_layer_0 L         &to_layer_0 U  &to_layer_0 MINUS  &to_layer_0 ESCAPE                                                  &to_layer_0 F   &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
+&to_layer_0 E  &to_layer_0 I         &to_layer_0 A  &to_layer_0 O      &to_layer_0 TAB       &trans                     &tyuutenn_macro    &to_layer_0 K   &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
+&kp RCTRL      &to_layer_0 Z         &to_layer_0 X  &to_layer_0 C      &to_layer_0 V         &trans                     &to_layer_0 COMMA  &to_layer_0 G   &mkp MB4       &to_layer_0 M  &mkp MB5       &to_layer_0 B
+&kp LEFT_WIN   &to_layer_0 LEFT_ALT  &trans         &mo_exit_0 7 0     &mt LEFT_SHIFT SPACE  &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 5 0                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -373,7 +373,7 @@
 &kp RCTRL           &kp LEFT_GUI     &kp LEFT_ALT       &trans             &trans  &kp DELETE      &trans        &trans                                                                  &trans
             >;
 
-            sensor-bindings = <&volume_up_down>;
+            sensor-bindings = <&scroll_left_right>;
         };
 
         A_SYMBOLS {
@@ -384,7 +384,7 @@
 &trans     &trans           &trans        &trans          &trans  &trans      &trans  &trans                                                                         &trans
             >;
 
-            sensor-bindings = <&volume_up_down>;
+            sensor-bindings = <&scroll_left_right>;
         };
 
         NUM {
@@ -417,7 +417,7 @@
 &trans          &trans     &trans     &trans     &trans     &trans      &trans       &trans                                      &trans
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&volume_up_down>;
         };
     };
 };
