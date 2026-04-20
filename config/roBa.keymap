@@ -314,10 +314,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp L         &kp U  &kp MINUS  &kp ESCAPE                                                  &kp F  &kp W  &lt 4 R  &kp Y  &kp P
-&kp E         &kp I         &kp A  &kp O      &kp TAB               &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
-&kp RCTRL     &kp Z         &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &mo 7      &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 9 DELETE
+&kp Q         &kp L     &kp U  &kp MINUS  &kp ESCAPE                                                  &kp F  &kp W  &lt 4 R  &kp Y  &kp P
+&kp E         &kp I     &kp A  &kp O      &kp TAB               &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z     &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp LEFT_WIN  &kp RALT  &mo 3  &mo 7      &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 9 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -347,10 +347,10 @@
 
         MANUAL_MOUSE {
             bindings = <
-&kp LG(UP_ARROW)    &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                                       &none  &none     &mo 4  &none     &none
-&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                  &trans             &tyuutenn_macro  &none  &mkp MB1  &none  &mkp MB2  &none
-&kp RCTRL     &kp Z         &kp X  &kp C      &kp V      &trans             &kp COMMA        &none  &mkp MB4  &none  &mkp MB5  &none
-&trans              &trans                  &trans          &trans                   &trans        &kp BACKSPACE      &kp ENTER        &mo 5                             &trans
+&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                                      &none  &none     &mo 4  &none     &none
+&kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans             &tyuutenn_macro  &none  &mkp MB1  &none  &mkp MB2  &none
+&kp RCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans             &kp COMMA        &none  &mkp MB4  &none  &mkp MB5  &none
+&trans            &trans           &trans          &trans           &trans                   &kp BACKSPACE      &kp ENTER        &mo 5                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
