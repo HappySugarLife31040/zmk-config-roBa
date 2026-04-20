@@ -315,8 +315,8 @@
         default_layer {
             bindings = <
 &kp Q         &kp L     &kp U  &kp MINUS  &kp ESCAPE                                                  &kp F  &kp W  &lt 4 R  &kp Y  &kp P
-&kp E         &kp I     &kp A  &kp O      &kp TAB               &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
-&kp RCTRL     &kp Z     &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp E         &kp I     &kp A  &kp O      &kp TAB               &none                &kp COMMA        &kp K  &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z     &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &tyuutenn_macro  &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
 &kp LEFT_WIN  &kp RALT  &mo 3  &mo 7      &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 5                         &lt 9 DELETE
             >;
 
@@ -325,10 +325,10 @@
 
         ANDROID {
             bindings = <
-&kp Q         &kp L         &kp U  &kp MINUS  &kp ESCAPE                                                  &kp F  &kp W  &lt 4 R  &kp Y  &kp P
-&kp E         &kp I         &kp A  &kp O      &kp TAB               &none                &tyuutenn_macro  &kp K  &kp T  &kp N    &kp S  &kp H
-&kp RCTRL     &kp Z         &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &mo 8      &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 6                         &lt 9 DELETE
+&kp Q         &kp L         &kp U  &kp MINUS  &kp ESCAPE                                            &kp F  &kp W  &lt 4 R  &kp Y  &kp P
+&kp E         &kp I         &kp A  &kp O      &kp TAB               &none                &trans     &kp K  &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z         &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &trans     &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &mo 8      &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER  &mo 6                         &lt 9 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -337,8 +337,8 @@
         AUTO_MOUSE {
             bindings = <
 &to_layer_0 Q  &to_layer_0 L         &to_layer_0 U  &to_layer_0 MINUS  &to_layer_0 ESCAPE                                                  &to_layer_0 F   &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
-&to_layer_0 E  &to_layer_0 I         &to_layer_0 A  &to_layer_0 O      &to_layer_0 TAB       &trans                     &tyuutenn_macro    &to_layer_0 K   &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
-&kp RCTRL      &to_layer_0 Z         &to_layer_0 X  &to_layer_0 C      &to_layer_0 V         &trans                     &to_layer_0 COMMA  &to_layer_0 G   &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B
+&to_layer_0 E  &to_layer_0 I         &to_layer_0 A  &to_layer_0 O      &to_layer_0 TAB       &trans                     &trans             &to_layer_0 K   &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
+&kp RCTRL      &to_layer_0 Z         &to_layer_0 X  &to_layer_0 C      &to_layer_0 V         &trans                     &trans             &to_layer_0 G   &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B
 &kp LEFT_WIN   &to_layer_0 LEFT_ALT  &trans         &mo_exit_0 7 0     &mt LEFT_SHIFT SPACE  &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 5 0                                               &trans
             >;
 
@@ -347,10 +347,10 @@
 
         MANUAL_MOUSE {
             bindings = <
-&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                                      &none  &none     &mo 4  &none     &none
-&kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans             &tyuutenn_macro  &none  &mkp MB1  &none  &mkp MB2  &none
-&kp RCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans             &kp COMMA        &none  &mkp MB4  &none  &mkp MB5  &none
-&trans            &trans           &trans          &trans           &trans                   &kp BACKSPACE      &kp ENTER        &mo 5                             &trans
+&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                                &none  &none     &mo 4  &none     &none
+&kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans             &trans     &none  &mkp MB1  &none  &mkp MB2  &none
+&kp RCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans             &trans     &none  &mkp MB4  &none  &mkp MB5  &none
+&trans            &trans           &trans          &trans           &trans                   &kp BACKSPACE      &kp ENTER  &mo 5                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -368,8 +368,8 @@
         SYMBOLS {
             bindings = <
 &kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans                                &hidari_macro     &sita_macro   &ue_macro         &migi_macro        &kp LS(INTERNATIONAL_1)
-&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans  &trans          &kp QUESTION  &kp SEMICOLON     &parenthesis  &kp LEFT_BRACKET  &int5_parenthesis  &kp INT_YEN
-&kp RCTRL       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans  &trans          &kp PERIOD    &kp SINGLE_QUOTE  &mkp MB4      &kp EQUAL         &mkp MB5           &kp LS(INTERNATIONAL_3)
+&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans  &trans          &kp PERIOD    &kp SEMICOLON     &parenthesis  &kp LEFT_BRACKET  &int5_parenthesis  &kp INT_YEN
+&kp RCTRL       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans  &trans          &kp QUESTION  &kp SINGLE_QUOTE  &mkp MB4      &kp EQUAL         &mkp MB5           &kp LS(INTERNATIONAL_3)
 &kp LEFT_WIN    &kp LEFT_ALT     &mo 3         &trans                &trans  &kp DELETE      &trans        &trans                                                               &trans
             >;
 
@@ -389,10 +389,10 @@
 
         NUM {
             bindings = <
-&kp LG(UP_ARROW)    &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                                &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
-&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                  &trans          &kp QUESTION  &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
-&mt LEFT_SHIFT TAB  &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(RG(RIGHT_ARROW))  &kp LG(DOWN_ARROW)       &trans          &kp PERIOD    &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
-&trans              &trans                  &trans          &trans                   &trans                   &kp DELETE      &trans        &trans                                                 &trans
+&kp LG(UP_ARROW)    &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                          &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
+&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                  &trans          &trans  &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
+&mt LEFT_SHIFT TAB  &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(RG(RIGHT_ARROW))  &kp LG(DOWN_ARROW)       &trans          &trans  &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
+&trans              &trans                  &trans          &trans                   &trans                   &kp DELETE      &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&brightness_up_down>;
@@ -400,10 +400,10 @@
 
         A_NUM {
             bindings = <
-&kp LG(UP_ARROW)    &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                                &kp PLUS      &kp N7  &kp N8  &kp N9  &kp N0
-&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                  &trans          &kp QUESTION  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
-&mt LEFT_SHIFT TAB  &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(RG(RIGHT_ARROW))  &none                    &trans          &kp PERIOD    &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL
-&trans              &trans                  &trans          &trans                   &trans                   &kp DELETE      &trans        &trans                                &trans
+&kp LG(UP_ARROW)    &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                          &kp PLUS      &kp N7  &kp N8  &kp N9  &kp N0
+&kp HOME            &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                  &trans          &trans  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
+&mt LEFT_SHIFT TAB  &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp LC(RG(RIGHT_ARROW))  &none                    &trans          &trans  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&trans              &trans                  &trans          &trans                   &trans                   &kp DELETE      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&brightness_up_down>;
