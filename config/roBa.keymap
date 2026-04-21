@@ -347,10 +347,10 @@
 
         MANUAL_MOUSE {
             bindings = <
-&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                                &none  &none     &mo 4  &none     &none
-&kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans             &trans     &none  &mkp MB1  &none  &mkp MB2  &none
-&kp RCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans             &trans     &none  &mkp MB4  &none  &mkp MB5  &none
-&trans            &trans           &trans          &trans           &trans                   &kp BACKSPACE      &kp ENTER  &mo 5                             &trans
+&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                                &none  &kp RC(LG(LEFT))  &mo 4        &kp RC(LG(RIGHT_ARROW))  &none
+&kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans             &trans     &none  &mkp MB1          &mkp MB3     &mkp MB2                 &none
+&kp RCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans             &trans     &none  &mkp MB4          &kp LG(TAB)  &mkp MB5                 &none
+&trans            &trans           &trans          &trans           &trans                   &kp BACKSPACE      &kp ENTER  &mo 5                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
