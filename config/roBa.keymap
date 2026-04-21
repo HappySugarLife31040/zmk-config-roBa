@@ -420,7 +420,7 @@
             sensor-bindings = <&volume_up_down>;
         };
 
-        New_Oonishi {
+        New_OonishiM {
             bindings = <
 &kp Q         &kp L     &kp U  &kp F      &kp MINUS                                                 &kp COMMA    &kp W  &lt 4 R  &kp Y  &kp P
 &kp E         &kp I     &kp A  &kp O      &kp TAB         &none                    &none            &kp K        &kp T  &kp N    &kp S  &kp H
