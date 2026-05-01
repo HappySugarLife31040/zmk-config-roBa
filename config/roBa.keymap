@@ -59,11 +59,6 @@
             layers = <2 7 9>;   // ANDROIDだけ
         };
 
-        qwerty {
-            bindings = <&tog 1>;
-            key-positions = <0 1>;
-        };
-
         PW {
             bindings = <&pa_macro>;
             key-positions = <9 0>;
@@ -79,9 +74,14 @@
             key-positions = <9 8>;
         };
 
-        zikken {
+        zekken {
             bindings = <&kp A>;
             key-positions = <10 11>;
+        };
+
+        qwerty {
+            bindings = <&tog 1>;
+            key-positions = <0 1>;
         };
     };
 
