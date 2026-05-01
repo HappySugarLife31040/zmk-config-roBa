@@ -325,11 +325,13 @@
 
         QWERTY {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp Q         &kp W     &kp R  &kp T  &kp Y                                                   &kp Y  &kp U  &lt 5 I  &kp O  &kp P
+&kp A         &kp S     &kp D  &kp F  &kp G               &none                &tyuutenn_macro  &kp H      &kp J  &kp K    &kp L  &kp -
+&kp RCTRL     &kp Z     &kp X  &kp C  &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp B      &kp N  &kp M    &kp ,  &kp .
+&kp LEFT_WIN  &kp RALT  &mo 4  &mo 8  &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 6                             &lt 10 DELETE
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ANDROID {
