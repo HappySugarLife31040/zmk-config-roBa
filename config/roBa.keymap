@@ -83,6 +83,11 @@
             bindings = <&tog 1>;
             key-positions = <0 1>;
         };
+
+        m32key_mode {
+            bindings = <&tog 2>;
+            key-positions = <1 2>;
+        };
     };
 
     macros {
@@ -319,10 +324,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp L     &kp U  &kp F  &kp MINUS                                                   &kp COMMA  &kp W  &lt 6 R  &kp Y  &kp P
-&kp E         &kp I     &kp A  &kp O  &kp TAB               &none                &tyuutenn_macro  &kp K      &kp T  &kp N    &kp S  &kp H
-&kp RCTRL     &kp Z     &kp X  &kp C  &kp V                 &kp PRINTSCREEN      &kp COMMA        &kp G      &kp D  &kp M    &kp J  &kp B
-&kp LEFT_WIN  &kp RALT  &mo 5  &mo 9  &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 7                             &lt 11 DELETE
+&kp Q         &kp L               &kp U  &kp F  &kp MINUS                                                   &kp COMMA  &kp W  &lt 6 R  &kp Y  &kp P
+&kp E         &kp I               &kp A  &kp O  &kp TAB               &none                &tyuutenn_macro  &kp K      &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z               &kp X  &kp C  &kp V                 &kp PRINTSCREEN      &none            &kp G      &kp D  &kp M    &kp J  &kp B
+&kp LEFT_WIN  &mt RALT RIGHT_ALT  &mo 5  &mo 9  &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 7                             &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -339,12 +344,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        New_OonishiM {
+        minimum32key {
             bindings = <
-&kp Q         &kp L     &kp U  &kp F      &kp MINUS                                                 &kp COMMA    &kp W  &lt 6 R  &kp Y  &kp P
-&kp E         &kp I     &kp A  &kp O      &kp TAB         &none                    &none            &kp K        &kp T  &kp N    &kp S  &kp H
-&kp RCTRL     &kp Z     &kp X  &kp C      &kp V           &kp PRINTSCREEN          &tyuutenn_macro  &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp LEFT_WIN  &kp RALT  &mo 5  &lt 9 TAB  &kp LEFT_SHIFT  &mt RCTRL BACKSPACE      &kp ENTER        &lt 7 SPACE                         &lt 11 DELETE
+&mt Q LEFT_WIN    &mt L RALT  &kp U  &kp F  &kp MINUS                                                      &kp COMMA    &kp W  &lt 6 R  &kp Y  &kp P
+&kp E             &kp I       &kp A  &kp O  &mt PRINTSCREEN TAB  &none                    &tyuutenn_macro  &kp K        &kp T  &kp N    &kp S  &kp H
+&mt Z LEFT_SHIFT  &kp X       &kp C  &kp V  &mt LCTRL SPACE      &lt 9 BACKSPACE          &lt 7 ENTER      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&none             &none       &none  &to 9  &mt SPACE LSHFT      &mt RCTRL BACKSPACE      &kp ENTER        &lt 7 SPACE                         &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
