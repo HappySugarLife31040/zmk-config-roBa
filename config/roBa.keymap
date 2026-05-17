@@ -346,10 +346,10 @@
 
         minimum32key {
             bindings = <
-&mt Q LEFT_WIN    &mt L RALT  &kp U  &kp F  &kp MINUS                                                      &kp COMMA    &kp W  &lt 6 R  &kp Y  &kp P
-&kp E             &kp I       &kp A  &kp O  &mt PRINTSCREEN TAB  &none                    &tyuutenn_macro  &kp K        &kp T  &kp N    &kp S  &kp H
-&mt Z LEFT_SHIFT  &kp X       &kp C  &kp V  &mt LCTRL SPACE      &lt 9 BACKSPACE          &lt 7 ENTER      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&none             &none       &none  &to 9  &mt SPACE LSHFT      &mt RCTRL BACKSPACE      &kp ENTER        &lt 7 SPACE                         &lt 11 DELETE
+&mt LEFT_WIN Q    &mt RALT L  &kp U  &kp F  &kp MINUS                                                       &kp COMMA    &kp W  &lt 6 R  &kp Y  &kp P
+&kp E             &kp I       &kp A  &kp O  &mt PRINTSCREEN TAB   &none                    &tyuutenn_macro  &kp K        &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V  &mt LCTRL SPACE       &lt 9 BACKSPACE          &lt 7 ENTER      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&none             &none       &none  &to 9  &mt LEFT_SHIFT SPACE  &mt RCTRL BACKSPACE      &kp ENTER        &lt 7 SPACE                         &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
