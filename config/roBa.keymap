@@ -344,12 +344,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        minimum32key {
+        minimum33key {
             bindings = <
-&mt LEFT_WIN Q    &mt RALT L  &kp U  &kp F  &kp MINUS                                                       &kp COMMA    &kp W  &lt 6 R  &kp Y  &kp P
-&kp E             &kp I       &kp A  &kp O  &mt PRINTSCREEN TAB   &none                    &tyuutenn_macro  &kp K        &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V  &mt LCTRL SPACE       &lt 9 BACKSPACE          &lt 7 ENTER      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&none             &none       &none  &to 9  &mt LEFT_SHIFT SPACE  &mt RCTRL BACKSPACE      &kp ENTER        &lt 7 SPACE                         &lt 11 DELETE
+&mt LEFT_WIN Q    &mt RALT L  &kp U  &kp F        &kp MINUS                                       &kp COMMA    &kp W  &lt 6 R  &kp Y  &kp P
+&kp E             &kp I       &kp A  &kp O        &mt PRINTSCREEN TAB       &none      &none      &kp K        &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V        &mt LCTRL QUESTION        &none      &none      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&none             &none       &none  &lt 9 SPACE  &mt LEFT_SHIFT BACKSPACE  &none      &kp ENTER  &lt 7 SPACE                         &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -370,7 +370,7 @@
             bindings = <
 &to_layer_0 Q  &to_layer_0 L         &to_layer_0 U  &to_layer_0 F   &to_layer_0 MINUS                                                   &to_layer_0 COMMA  &to_layer_0 W  &trans         &to_layer_0 Y  &to_layer_0 P
 &to_layer_0 E  &to_layer_0 I         &to_layer_0 A  &to_layer_0 O   &to_layer_0 TAB       &trans                     &trans             &to_layer_0 K      &mkp MB1       &to_layer_0 N  &mkp MB2       &to_layer_0 H
-&kp RCTRL      &to_layer_0 Z         &to_layer_0 X  &to_layer_0 C   &to_layer_0 V         &trans                     &trans             &to_layer_0 G      &to_layer_0 D  &to_layer_0 M  &to_layer_0 J  &to_layer_0 B
+&kp RCTRL      &to_layer_0 Z         &to_layer_0 X  &to_layer_0 C   &to_layer_0 V         &trans                     &trans             &to_layer_0 G      &mkp MB1       &to_layer_0 M  &mkp MB2       &to_layer_0 B
 &kp LEFT_WIN   &to_layer_0 LEFT_ALT  &trans         &mo_exit_0 9 0  &mt LEFT_SHIFT SPACE  &to_layer_0 BACKSPACE      &to_layer_0 ENTER  &mo_exit_0 7 0                                                  &trans
             >;
 
