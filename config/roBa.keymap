@@ -38,25 +38,25 @@
         L0int4 {
             bindings = <&L0int4_macro>;
             key-positions = <18 19>;
-            layers = <0 4 5 6 7 9 11>;
+            layers = <0 1 2 3 7 9 11>;
         };
 
         L0int5 {
             bindings = <&L0int5_macro>;
             key-positions = <12 13>;
-            layers = <0 4 5 6 7 9 11>;
+            layers = <0 1 2 3 7 9 11>;
         };
 
         combo_android {
             bindings = <&kp LC(SPACE)>;
             key-positions = <12 13>;
-            layers = <3 8 10>;   // ANDROIDだけ
+            layers = <6 8 10>;   // ANDROIDだけ
         };
 
         combo_android2 {
             bindings = <&android_henkan>;
             key-positions = <18 19>;
-            layers = <3 8 10>;   // ANDROIDだけ
+            layers = <6 8 10>;   // ANDROIDだけ
         };
 
         PW {
@@ -70,7 +70,7 @@
         };
 
         to_manualmouse {
-            bindings = <&tog 5>;
+            bindings = <&tog 2>;
             key-positions = <9 8>;
         };
 
@@ -80,12 +80,12 @@
         };
 
         qwerty {
-            bindings = <&tog 1>;
+            bindings = <&tog 4>;
             key-positions = <0 1>;
         };
 
         m32key_mode {
-            bindings = <&tog 2>;
+            bindings = <&tog 5>;
             key-positions = <1 2>;
         };
     };
@@ -108,7 +108,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 4>;
+                <&sl 1>;
 
             label = "MKP_EXIT_AML";
         };
@@ -229,7 +229,7 @@
         BT2: BT2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 3>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 6>;
 
             label = "BT3";
         };
@@ -237,7 +237,7 @@
         android_henkan: android_henkan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 3 &kp LC(SPACE)>;
+            bindings = <&to 6 &kp LC(SPACE)>;
             label = "ANDROID_HENKAN";
         };
 
@@ -324,43 +324,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp L               &kp U  &kp F  &kp MINUS                                                   &kp COMMA  &kp W  &lt 6 R  &kp Y  &kp P
+&kp Q         &kp L               &kp U  &kp F  &kp MINUS                                                   &kp COMMA  &kp W  &lt 3 R  &kp Y  &kp P
 &kp E         &kp I               &kp A  &kp O  &kp TAB               &none                &tyuutenn_macro  &kp K      &kp T  &kp N    &kp S  &kp H
 &kp RCTRL     &kp Z               &kp X  &kp C  &kp V                 &kp PRINTSCREEN      &none            &kp G      &kp D  &kp M    &kp J  &kp B
-&kp LEFT_WIN  &mt RALT RIGHT_ALT  &mo 5  &mo 9  &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 7                             &lt 11 DELETE
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        QWERTY {
-            bindings = <
-&kp Q         &kp W     &kp E  &kp R  &kp T                                                       &kp Y  &kp U  &lt 6 I  &kp O      &kp P
-&kp A         &kp S     &kp D  &kp F  &kp G                 &none                &tyuutenn_macro  &kp H  &kp J  &kp K    &kp L      &kp MINUS
-&kp RCTRL     &kp Z     &kp X  &kp C  &kp V                 &kp PRINTSCREEN      &kp TAB          &kp B  &kp N  &kp M    &kp COMMA  &kp DOT
-&kp LEFT_WIN  &kp RALT  &mo 5  &mo 9  &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 7                             &lt 11 DELETE
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        minimum33key {
-            bindings = <
-&mt LEFT_WIN Q    &mt RALT L  &kp U  &kp F        &kp MINUS                                       &kp COMMA    &kp W  &lt 6 R  &kp Y  &kp P
-&kp E             &kp I       &kp A  &kp O        &mt PRINTSCREEN TAB       &none      &none      &kp K        &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V        &mt LCTRL QUESTION        &none      &none      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&none             &none       &none  &lt 9 SPACE  &mt LEFT_SHIFT BACKSPACE  &none      &kp ENTER  &lt 7 SPACE                         &lt 11 DELETE
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        ANDROID {
-            bindings = <
-&kp Q         &kp L         &kp U  &kp MINUS  &kp ESCAPE                                            &kp F  &kp W  &lt 6 R  &kp Y  &kp P
-&kp E         &kp I         &kp A  &kp O      &kp TAB               &none                &trans     &kp K  &kp T  &kp N    &kp S  &kp H
-&kp RCTRL     &kp Z         &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &trans     &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &mo 10     &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER  &mo 8                         &lt 11 DELETE
+&kp LEFT_WIN  &mt RALT RIGHT_ALT  &mo 2  &mo 9  &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 7                             &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -379,7 +346,7 @@
 
         MANUAL_MOUSE {
             bindings = <
-&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                                &none  &kp RC(LG(LEFT))  &mo 6        &kp RC(LG(RIGHT_ARROW))  &none
+&kp LG(UP_ARROW)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LG(LS(RIGHT_ARROW))                                &none  &kp RC(LG(LEFT))  &mo 3        &kp RC(LG(RIGHT_ARROW))  &none
 &kp HOME          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans             &trans     &none  &mkp MB1          &mkp MB3     &mkp MB2                 &none
 &kp RCTRL         &kp Z            &kp X           &kp C            &kp V                    &trans             &trans     &none  &mkp MB4          &kp LG(TAB)  &mkp MB5                 &none
 &trans            &trans           &trans          &trans           &trans                   &kp BACKSPACE      &kp ENTER  &mo 7                                                          &trans
@@ -397,12 +364,45 @@
             >;
         };
 
+        QWERTY {
+            bindings = <
+&kp Q         &kp W     &kp E  &kp R  &kp T                                                       &kp Y  &kp U  &lt 3 I  &kp O      &kp P
+&kp A         &kp S     &kp D  &kp F  &kp G                 &none                &tyuutenn_macro  &kp H  &kp J  &kp K    &kp L      &kp MINUS
+&kp RCTRL     &kp Z     &kp X  &kp C  &kp V                 &kp PRINTSCREEN      &kp TAB          &kp B  &kp N  &kp M    &kp COMMA  &kp DOT
+&kp LEFT_WIN  &kp RALT  &mo 2  &mo 9  &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER        &mo 7                             &lt 11 DELETE
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        minimum33key {
+            bindings = <
+&mt LEFT_WIN Q    &mt RALT L  &kp U  &kp F        &kp MINUS                                       &kp COMMA    &kp W  &lt 3 R  &kp Y  &kp P
+&kp E             &kp I       &kp A  &kp O        &mt PRINTSCREEN TAB       &none      &none      &kp K        &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V        &mt LCTRL QUESTION        &none      &none      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&none             &none       &none  &lt 9 SPACE  &mt LEFT_SHIFT BACKSPACE  &none      &kp ENTER  &lt 7 SPACE                         &lt 11 DELETE
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        ANDROID {
+            bindings = <
+&kp Q         &kp L         &kp U  &kp MINUS  &kp ESCAPE                                            &kp F  &kp W  &lt 3 R  &kp Y  &kp P
+&kp E         &kp I         &kp A  &kp O      &kp TAB               &none                &trans     &kp K  &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z         &kp X  &kp C      &kp V                 &kp PRINTSCREEN      &trans     &kp G  &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &mo 10     &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp ENTER  &mo 8                         &lt 11 DELETE
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
         SYMBOLS {
             bindings = <
 &kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans                                &hidari_macro     &sita_macro        &ue_macro         &migi_macro  &kp LS(INTERNATIONAL_1)
 &kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans  &trans          &kp QUESTION  &kp SEMICOLON     &int5_parenthesis  &kp LEFT_BRACKET  &kp ESCAPE   &kp INT_YEN
 &kp RCTRL       &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans  &trans          &kp PERIOD    &kp SINGLE_QUOTE  &mkp MB4           &kp EQUAL         &mkp MB5     &kp LS(INTERNATIONAL_3)
-&kp LEFT_WIN    &kp LEFT_ALT     &mo 5         &trans                &trans  &kp DELETE      &trans        &trans                                                              &trans
+&kp LEFT_WIN    &kp LEFT_ALT     &mo 2         &trans                &trans  &kp DELETE      &trans        &trans                                                              &trans
             >;
 
             sensor-bindings = <&scroll_left_right>;
@@ -443,7 +443,7 @@
 
         BlueTooth+Command {
             bindings = <
-&trans          &trans     &trans     &trans     &trans                              &bt BT_SEL 0  &bt BT_SEL 1  &mo 6   &BT2    &bt BT_SEL 3
+&trans          &trans     &trans     &trans     &trans                              &bt BT_SEL 0  &bt BT_SEL 1  &mo 3   &BT2    &bt BT_SEL 3
 &trans          &trans     &trans     &trans     &trans     &trans      &trans       &trans        &trans        &trans  &trans  &bt BT_SEL 4
 &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp RC(V)  &trans      &bootloader  &trans        &trans        &trans  &trans  &bt BT_CLR
 &trans          &trans     &trans     &trans     &trans     &trans      &trans       &trans                                      &trans
