@@ -75,7 +75,7 @@
         };
 
         zekken {
-            bindings = <&kp B>;
+            bindings = <&kp C>;
             key-positions = <10 11>;
         };
 
