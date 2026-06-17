@@ -333,7 +333,7 @@
             bindings = <
 &mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                       &kp MINUS    &kp W  &lt 3 R  &kp Y  &kp P
 &kp E           &kp I           &kp A  &kp O              &kp TAB               &none                &none      &kp K        &kp T  &kp N    &kp S  &kp H
-&kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN      &none      &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN      &none      &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
 &kp LEFT_WIN    &kp LALT        &mo 2  &lt 9 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp COMMA  &lt 7 ENTER                         &lt 11 DELETE
             >;
 
@@ -364,10 +364,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &trans  &mkp_exit_AML MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
@@ -384,10 +384,10 @@
 
         minimum33key {
             bindings = <
-&mt LEFT_WIN Q    &mt RALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                        &kp MINUS  &kp W  &lt 3 R  &kp Y  &kp P
-&kp E             &kp I       &kp A  &kp O              &kp TAB             &none      &none   &kp K      &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V              &mt LCTRL QUESTION  &none      &none   &kp G      &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&none             &none       &none  &trans             &trans              &none      &trans  &trans                            &lt 11 DELETE
+&mt LEFT_WIN Q    &mt RALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                         &kp MINUS  &kp W  &lt 3 R  &kp Y  &kp P
+&kp E             &kp I       &kp A  &kp O              &kp TAB             &none       &none   &kp K      &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X       &kp C  &kp V              &mt LCTRL QUESTION  &none       &none   &kp G      &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&none             &none       &none  &trans             &trans              &trans      &trans  &trans                            &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -395,10 +395,10 @@
 
         ANDROID {
             bindings = <
-&kp Q         &kp L         &kp U  &kp F   &trans                                &trans       &kp W  &lt 3 R  &kp Y  &kp P
-&kp E         &kp I         &kp A  &kp O   &kp TAB  &none                &trans  &kp K        &kp T  &kp N    &kp S  &kp H
-&kp RCTRL     &kp Z         &kp X  &kp C   &kp V    &kp PRINTSCREEN      &trans  &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
-&kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &mo 10  &trans   &kp BACKSPACE        &trans  &lt 8 ENTER                         &lt 11 DELETE
+&kp Q         &kp L         &kp U  &kp F             &trans                                &trans       &kp W  &lt 3 R  &kp Y  &kp P
+&kp E         &kp I         &kp A  &kp O             &kp TAB  &none                &trans  &kp K        &kp T  &kp N    &kp S  &kp H
+&kp RCTRL     &kp Z         &kp X  &kp C             &kp V    &kp PRINTSCREEN      &trans  &kp G        &kp D  &kp M    &kp J  &mt RIGHT_SHIFT B
+&kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &lt 10 BACKSPACE  &trans   &trans               &trans  &lt 8 ENTER                         &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -406,10 +406,10 @@
 
         SYMBOLS {
             bindings = <
-&kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp QUESTION                                                    &kp EQUAL         &hidari_macro      &sita_macro       &ue_macro  &migi_macro
-&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp INT_YEN              &trans                     &trans      &kp SEMICOLON     &int5_parenthesis  &kp LEFT_BRACKET  &mkp MB2   &kp LS(INT_RO)
-&trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LS(INTERNATIONAL_3)  &trans                     &trans      &kp SINGLE_QUOTE  &mkp MB4           &kp ESCAPE        &mkp MB5   &kp RG(LA(K))
-&kp LEFT_WIN    &kp LEFT_ALT     &mo 2         &lt 9 SPACE           &lt 9 SPACE              &mt LEFT_SHIFT DELETE      &kp PERIOD  &lt 7 ENTER                                                       &trans
+&kp PLUS        &kp LS(N7)       &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp QUESTION                                         &kp EQUAL         &hidari_macro      &sita_macro       &ue_macro  &migi_macro
+&kp LEFT_BRACE  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp INT_YEN              &trans          &trans      &kp SEMICOLON     &int5_parenthesis  &kp LEFT_BRACKET  &mkp MB2   &kp LS(INT_RO)
+&trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LS(INTERNATIONAL_3)  &trans          &trans      &kp SINGLE_QUOTE  &mkp MB4           &kp ESCAPE        &mkp MB5   &kp RG(LA(K))
+&kp LEFT_WIN    &kp LEFT_ALT     &mo 2         &lt 9 DELETE          &trans                   &kp DELETE      &kp PERIOD  &lt 7 ENTER                                                       &trans
             >;
 
             sensor-bindings = <&scroll_left_right>;
