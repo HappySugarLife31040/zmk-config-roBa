@@ -331,10 +331,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L     &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                           &kp MINUS    &kp W  &lt 3 R  &kp Y  &kp P
-&kp E             &kp I     &kp A  &kp O              &kp TAB          &none                         &none      &kp K        &kp T  &kp N    &kp S  &kp H
-&mt LCTRL DELETE  &kp Z     &kp X  &kp C              &kp V            &kp PRINTSCREEN               &none      &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LEFT_WIN      &kp LALT  &mo 2  &lt 9 SPACE        &lt 9 SPACE      &mt LEFT_SHIFT BACKSPACE      &kp COMMA  &lt 7 ENTER                         &lt 11 DELETE
+&mt LEFT_WIN Q  &mt LEFT_ALT L  &kp U  &mt PRINTSCREEN F  &tyuutenn_macro                                       &kp MINUS    &kp W  &lt 3 R  &kp Y  &kp P
+&kp E           &kp I           &kp A  &kp O              &kp TAB               &none                &none      &kp K        &kp T  &kp N    &kp S  &kp H
+&kp LCTRL       &kp Z           &kp X  &kp C              &kp V                 &kp PRINTSCREEN      &none      &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LEFT_WIN    &kp LALT        &mo 2  &lt 9 BACKSPACE    &mt LEFT_SHIFT SPACE  &kp BACKSPACE        &kp COMMA  &lt 7 ENTER                         &lt 11 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -431,7 +431,7 @@
 &kp LG(UP_ARROW)   &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &kp LG(LS(RIGHT_ARROW))                          &kp LS(SEMICOLON)     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
 &kp HOME           &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                  &trans      &trans      &kp MINUS             &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SLASH
 &kp LC(PAGE_DOWN)  &kp RC(LG(LEFT_ARROW))  &kp LG(TAB)     &kp RC(LG(RIGHT_ARROW))  &kp LG(DOWN_ARROW)       &trans      &trans      &kp LS(SINGLE_QUOTE)  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LS(MINUS)
-&trans             &trans                  &trans          &trans                   &trans                   &trans      &kt PERIOD  &trans                                                 &trans
+&trans             &trans                  &trans          &trans                   &trans                   &trans      &kp PERIOD  &trans                                                 &trans
             >;
 
             sensor-bindings = <&brightness_up_down>;
