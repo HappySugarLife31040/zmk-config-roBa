@@ -6,8 +6,7 @@
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 1000
-#define AUTO_MOUSE 1
-#define SCROLL 3
+#define SCROLL 1
 
 &mt {
     flavor = "balanced";
